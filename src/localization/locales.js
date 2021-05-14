@@ -19,6 +19,7 @@
 // THE SOFTWARE.
 
 export const LOCALES = {
+  zh:'中文',
   en: 'English',
   fi: 'Suomi',
   pt: 'Português',

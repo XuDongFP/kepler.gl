@@ -255,7 +255,7 @@ export const INITIAL_UI_STATE = {
   // load files
   loadFiles: DEFAULT_LOAD_FILES,
   // Locale of the UI
-  locale: LOCALE_CODES.en
+  locale: LOCALE_CODES.zh
 };
 
 /* Updaters */

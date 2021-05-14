@@ -38,6 +38,21 @@ const en = {
 
 export const messages = {
   en,
+  zh: {
+    'modal.loadData.remote': '通过URL链接载入地图',
+    'sampleMapsTab.noData': '没有数据？',
+    'sampleMapsTab.trySampleData': '试试示例数据',
+    'sampleDataViewer.rowCount': ' {rowCount} 行',
+    'loadRemoteMap.description': '通过自定义链接载入地图',
+    'loadRemoteMap.message':
+      '你可以使用以下格式: CSV | JSON | Kepler.gl config json。确保链接包含文件扩展名。',
+    'loadRemoteMap.examples': '示例：',
+    'loadRemoteMap.cors':
+      '* CORS跨域资源共享政策必须定义在你的自定义URL域上，以便访问。更多信息 ',
+    'loadRemoteMap.clickHere':
+      '<a rel="noopener noreferrer" target="_blank" href="{corsLink}">点击这里</a>',
+    'loadRemoteMap.fetch': '获取'
+  },
   fi: {
     'modal.loadData.remote': 'Lataa kartta URL-osoitteen avulla',
     'sampleMapsTab.noData': 'Ei aineistoja?',

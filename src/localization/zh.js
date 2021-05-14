@@ -108,15 +108,15 @@ export default {
       arc: '弧',
       line: '线',
       grid: '网格',
-      hexbin: 'hexbin',
+      hexbin: '六角星',
       polygon: '多面体',
       geojson: 'geojson',
-      cluster: 'cluster',
+      cluster: '群组',
       icon: '图标',
       heatmap: '热力图',
-      hexagon: 'hexagon',
+      hexagon: '六边形',
       hexagonid: 'H3',
-      trip: 'trip',
+      trip: '路径',
       s2: 'S2',
       '3d': '3D'
     }
@@ -142,11 +142,11 @@ export default {
     colorAggregation: '色彩聚合',
     heightAggregation: '高度聚合',
     resolutionRange: '分辨率范围',
-    sizeScale: '尺度Size Scale',
+    sizeScale: '尺寸比例',
     worldUnitSize: '世界单位大小',
     elevationScale: '地形缩放',
     heightScale: '高度缩放',
-    coverageRange: 'Coverage Range',
+    coverageRange: '覆盖范围',
     highPrecisionRendering: '高精度渲染',
     highPrecisionRenderingDescription: '高精度会带来较低的性能',
     height: '高度',
@@ -206,8 +206,8 @@ export default {
     timePlayback: '时序播放',
     cloudStorage: '云存储',
     '3DMap': '3D地图',
-    animationByWindow: 'Moving Time Window',
-    animationByIncremental: 'Incremental Time Window',
+    animationByWindow: '移动式时间窗口',
+    animationByIncremental: '递增式时间窗口',
     speed: '速度',
     play: '播放',
     pause: '暂停',
@@ -276,32 +276,32 @@ export default {
     },
     addStyle: {
       publishTitle:
-        '2. If entered mapbox stule url in step.1, publish your style at mapbox or provide access token. (Optional)',
-      publishSubtitle1: 'You can create your own map style at',
-      publishSubtitle2: 'and',
-      publishSubtitle3: 'publish',
-      publishSubtitle4: 'it.',
-      publishSubtitle5: 'To use private style, paste your',
-      publishSubtitle6: 'access token',
+        '2. 如果在第一步输入的是mapbox样式链接，记得发布你的样式或提供访问令牌。（可选）',
+      publishSubtitle1: '你可以创建自己的地图样式，在',
+      publishSubtitle2: '和',
+      publishSubtitle3: '发布',
+      publishSubtitle4: '它.',
+      publishSubtitle5: '要使用个人样式，粘贴你的',
+      publishSubtitle6: '访问令牌',
       publishSubtitle7:
-        'here. *kepler.gl is a client-side application, data stays in your browser..',
-      exampleToken: 'e.g. pk.abcdefg.xxxxxx',
-      pasteTitle: '1. Paste style url',
-      pasteSubtitle0: 'Style url can be a mapbox',
-      pasteSubtitle1: 'What is a',
-      pasteSubtitle2: 'style URL',
-      pasteSubtitle3: 'or a style.json using the',
-      pasteSubtitle4: 'Mapbox GL Style Spec',
-      namingTitle: '3. Name your style'
+        '于此。 *kepler.gl 是一个用户端程序，数据停留在你的浏览器内..',
+      exampleToken: '形如 pk.abcdefg.xxxxxx',
+      pasteTitle: '1. 粘贴你的样式链接',
+      pasteSubtitle0: '样式链接是一个Mapbox',
+      pasteSubtitle1: '什么是',
+      pasteSubtitle2: 'Style URL',
+      pasteSubtitle3: '或一个style.json，符合',
+      pasteSubtitle4: 'Mapbox GL Style规范',
+      namingTitle: '3. 命名你的样式'
     },
     shareMap: {
       shareUriTitle: '分享地图链接',
       shareUriSubtitle: '创建地图链接分享给别人',
       cloudTitle: '云端存储',
-      cloudSubtitle: '登录并上传地图数据到你的个人云端存储',
+      cloudSubtitle: '登录并上传地图数据到个人云端存储',
       shareDisclaimer:
-        'kepler.gl 将保存你的地图数据到你的个人云端存储，只有通过此地图链接才能访问你的地图和数据。' +
-        '任何时候你都可以在你的云端存储编辑或删除这些数据文件。',
+        'kepler.gl 将保存地图数据到你的个人云端存储，只有通过此地图链接才能访问你的地图和数据。' +
+        '你可以随时在云端存储编辑或删除这些数据文件。',
       gotoPage: '前往你的Kepler.gl {currentProvider} 页面'
     },
     statusPanel: {
@@ -317,13 +317,13 @@ export default {
       formatSubtitle: '选择要导出的地图格式',
       html: {
         selection: '导出地图到交互式的网页html文件.',
-        tokenTitle: 'Mapbox接入密钥',
-        tokenSubtitle: '在html文件中使用你自己的Mapbox密钥（可选）',
-        tokenPlaceholder: '粘贴你的Mapbox接入密钥',
+        tokenTitle: 'Mapbox访问令牌',
+        tokenSubtitle: '在html文件中使用你自己的Mapbox令牌（可选）',
+        tokenPlaceholder: '粘贴你的Mapbox访问令牌',
         tokenMisuseWarning:
-          '* 如不提供你的个人Mapbox密钥，如果我们基于防止滥用的考虑而更改了密钥，地图可能不会正常显示。',
-        tokenDisclaimer: 'You can change the Mapbox token later using the following instructions: ',
-        tokenUpdate: '如何更新一个已经存在的地图密钥。',
+          '* 如不提供你的个人Mapbox令牌，如果我们基于防止滥用的考虑而更改了令牌，地图可能不会正常显示。',
+        tokenDisclaimer: '你可以在以后使用以下说明更改Mapbox令牌：',
+        tokenUpdate: '如何更新一个已经存在的地图令牌。',
         modeTitle: '地图模式',
         modeSubtitle1: '选择地图模式。 更多 ',
         modeSubtitle2: '信息',
@@ -338,8 +338,8 @@ export default {
         selection:
           '导出当前地图的数据和配置到一个单独的json文件中。之后上传这个文件到kepler.gl即可打开同样的地图。',
         disclaimer:
-          '* Map config is coupled with loaded datasets. ‘dataId’ is used to bind layers, filters, and tooltips to a specific dataset. ' +
-          'When passing this config to addDataToMap, make sure the dataset id matches the dataId/s in this config.'
+          '* 地图配置与加载的数据集相耦合。dataId 用于将图层、过滤器和工具提示绑定到特定的数据集。' +
+          '当把这个配置传递给addDataToMap时，确保数据集的id与这个配置中的dataId相匹配。'
       }
     },
     loadingDialog: {
@@ -350,12 +350,12 @@ export default {
       storage: '从云存储加载'
     },
     tripInfo: {
-      title: 'How to enable trip animation',
+      title: '如何启用路径动画',
       description1:
-        'In order to animate the path, the geoJSON data needs to contain `LineString` in its feature geometry, and the coordinates in the LineString need to have 4 elements in the formats of',
+        '为了使路径动画化，geoJSON数据需要在其特征几何中包含`LineString`，并且LineString中的坐标需要有4个元素，格式为',
       code: ' [longitude, latitude, altitude, timestamp] ',
       description2:
-        'with the last element being a timestamp. Valid timestamp formats include unix in seconds such as `1564184363` or in milliseconds such as `1564184363000`.',
+        '最后一个元素是一个时间戳。有效的时间戳格式包括unix的秒数，如`1564184363`或毫秒，如`1564184363000`。',
       example: '示例：'
     },
     iconInfo: {
@@ -427,10 +427,10 @@ export default {
     reversed: '反向'
   },
   scale: {
-    colorScale: 'Color Scale',
-    sizeScale: 'Size Scale',
-    strokeScale: 'Stroke Scale',
-    scale: 'Scale'
+    colorScale: '色阶',
+    sizeScale: '尺寸比例',
+    strokeScale: '描边比例',
+    scale: '比例'
   },
   fileUploader: {
     message: '拖拽单个或多个文件至此',
